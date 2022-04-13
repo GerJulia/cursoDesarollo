@@ -120,19 +120,21 @@ body{
     .cursos {
         text-align: center;
         background-color: rgb(246, 224, 195);
-    }
+    } 
 
     .formulario{
         border: 3px solid rgb(143, 143, 243);
         margin-top: 30px;
         padding: 10px;
     }
+
+  
 .textoCursos{
     text-align: center;
     margin-top: 100px;
     color: rgb(12, 12, 12);
     background-color: rgb(194, 143, 76);
-    }
+    } 
 
 .textoEducacion{
     text-align: center;
