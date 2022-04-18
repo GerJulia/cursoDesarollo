@@ -42,7 +42,9 @@ h1 {
     display: grid;
     grid-template-areas: "imagenPerro"
                          "texto "
-                         "videoPerro ";
+                         "videoPerro "
+                         "footer";
+                         
                           
     justify-content: center;
 }
@@ -52,6 +54,7 @@ h1 {
     text-align: center;
     margin-top: 20px;
     grid-area: videoPerro;
+    margin-bottom: 40px;
     
 }
 
@@ -82,21 +85,33 @@ img {
 }
 
 body{
-    background-image: url('../img/fondoperro.jpg')
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(9,19,128,1) 36%, rgba(9,9,121,1) 53%, rgba(0,212,255,1) 96%);
     
     }
 
     footer{
         color: rgb(246, 242, 237);
        text-align: center;
-        position: fixed;
-        bottom: 0;
         width: 95%;
         background-color: bisque;
         color: black;
+        grid-area: footer;
+        }
         
-    }
+        .footerBootStrap{
+            color: rgb(246, 242, 237);
+           text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 95%;
+            background-color: bisque;
+            color: black;
+             }
 
+        .footerBootStrap h5{
+            font-size: medium;
+        }
     .contacto{
         text-align: center;
         background-color: rgb(246, 224, 195);
@@ -136,6 +151,15 @@ body{
     background-color: rgb(194, 143, 76);
     } 
 
+    .textoAdicionalCurso{
+        margin-top: 100px;
+        color: rgb(72, 39, 39);
+        font-size:larger;
+        text-align: center;
+        font-weight: bold;
+        -webkit-text-stroke: 0.5px rgb(28, 26, 26);
+    }
+
 .textoEducacion{
     text-align: center;
     margin-top: 100px;
@@ -150,15 +174,29 @@ body{
     background-color: rgb(194, 143, 76);
 }
 
+.textoCurso{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.textoCurso2{
+    color: rgb(1, 21, 25);
+    font-weight: bold;
+    -webkit-text-stroke: 0.2px rgb(87, 3, 254);
+    
+}
+
+
 
 @media only screen and (min-width:600px){
 
     .mainIndex{
         height: 70vh;
         display: grid;
-        grid-template-areas: "imagenPerro "
-                             "texto "
-                             "videoPerro ";
+        grid-template-areas: "imagenPerro"
+                             "texto"
+                             "videoPerro"
+                             "footer";
 
  }
   
@@ -168,7 +206,8 @@ body{
 
 .texto{
     font-size: 1.2rem;
-    color: rgb(0, 0, 0);
+    font-weight: bold;
+    color: rgb(109, 3, 3);
 }
 
 .textoEducacion{
@@ -183,21 +222,34 @@ body{
     font-size: 1.3rem;
 }
 
-
-
 footer{
     width: 90%;
 }
+footer h5{
+font-size: small;
 }
+
+.footerBootStrap{
+    color: rgb(246, 242, 237);
+   text-align: center;
+    width: 85%;
+    background-color: bisque;
+    color: black;
+    }
+
+
 
 @media only screen and (min-width:1024px){
 
     .mainIndex{
         height: 10vh;
         display: grid;
-        grid-template-areas: "imagenPerro "
-                             "texto "
-                             "videoPerro ";
+        grid-template-areas: "imagenPerro"
+                             "texto"
+                             "videoPerro"
+                             "footer";
+
+                             justify-content: center;
 }
     
 .menu ul li a{
@@ -221,15 +273,20 @@ footer{
     padding-bottom: 50px;
     
 }
-
-
 footer{
-    width: 95%;
-margin-top: 10px;
-
-
-}
-}
-
-
     
+    width: 95%;
+}
+footer h5{
+   font-size:medium;
+   }
+}
+
+.footerBootStrap{
+    color: rgb(246, 242, 237);
+   text-align: center;
+    width: 90%;
+    background-color: bisque;
+    color: black;
+    }
+}

@@ -2,113 +2,129 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--link css  aplico otro css para poder trabajar con bootstrap-->
-    <link rel="stylesheet" href="../css/main2.css">
-    <title>Cursos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--link css-->
+  <link rel="stylesheet" href="../css/main.css">
+  <!--Animated css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Cursos</title>
 </head>
 
 <body>
-    <header class="container-fluid">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">mascotaElite</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Educacion</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Quienes Somos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                      </li>
-                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                      </li>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Cursos</a>
-                      </li>
-                      </li>
-                      
-                    </ul>
-                   
-                  </div>
-                </div>
-              </nav>
-        </div>
-    </header>
+  <header class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">mascotaElite</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Educacion.html">Educacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="quienessomos.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+              </li>
 
-    <!--Carousel-->
-    <main class="row justify-content-center ">
-        <div id="carouselExampleCaptions" class="carousel slide col-7  " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../img/cachorro.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3 class="texto">Cachorros</h3>
-                  <p class="texto">Primeros pasos en la educación de tu cachorro</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../img/adulto.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3 class="texto">Adultos</h3>
-                  <p class="texto">Tratar el comportamiento e interacción con otros animales</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../img/elite.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h3 class="texto2">Elite</h3>
-                  <p class="texto2"> Desde comandos básicos al comportamiento y educación de tu perro</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Cursos.html">Cursos</a>
+              </li>
+              </li>
+
+            </ul>
+
           </div>
-        
-        
-    </main>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--Carousel-->
+  <main class="row justify-content-center mt-5 img-fluid ">
+    <div id="carouselExampleCaptions" class="carousel slide col-9  " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner animate__animated animate__bounceInDown">
+        <div class="carousel-item active">
+          <img src="../img/cachorro.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="textoCurso">Cachorros</h3>
+            <p class="textoCurso">Primeros pasos en la educación de tu cachorro</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/adulto.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="textoCurso">Adultos</h3>
+            <p class="textoCurso">Tratar el comportamiento e interacción con otros animales</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/elite.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="textoCurso2">Elite</h3>
+            <p class="textoCurso2"> Desde comandos básicos al comportamiento y educación de tu perro</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div>
+      <p class="textoAdicionalCurso animate__animated animate__flipInX  ">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus maxime facilis perspiciatis praesentium
+        fuga distinctio, voluptates quidem aut earum mollitia quo optio velit. Quibusdam, voluptatibus dignissimos.
+        Doloribus qui tempore unde.
+      </p>
+    </div>
+
+
+
 
     <section class="logoWhatsapp">
-        <div class="whatsapp"><img src="../img/whatsapp.png" alt=""></div>
+      <div class="whatsapp"><img src="../img/whatsapp.png" alt=""></div>
     </section>
 
 
-    <footer>
-        <h4>Whatsapp: 118288827372737123</h4>
-        <h5>Todos los derechos Reservados</h5>
+    <footer class="footerBootStrap">
+      <h5>Whatsapp: 118288827372737123</h5>
+      <h5>Todos los derechos Reservados</h5>
 
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
