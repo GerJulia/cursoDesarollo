@@ -1,1 +1,58 @@
 @import "utilities/variables";
+
+
+
+body{
+    background: rgb(36,36,36);
+    background: linear-gradient(90deg, rgba(36,36,36,1) 22%, rgba(78,81,83,1) 83%);
+}
+
+p{
+    color: map-get($texto,color);
+    text-align: map-get($texto,centro);
+    font-size: map-get($texto,fuente);
+}
+
+.textoAdicionalCurso{
+    @extend p;
+    background-color: rgb(24, 24, 24);
+    margin-top: 20px;
+}
+
+.textoEducacion{
+    @include flex-row-center;
+}
+
+footer{
+    color: whitesmoke;
+    text-align: center;
+    background-color: grey;
+    
+    
+    
+    
+}
+
+.mainIndex{
+    height: 70vh;
+    display: grid;
+    grid-template-areas: "imagenPerro"
+                         "texto "
+                         "videoPerro "
+                         "footer";
+                         
+                          
+    text-align: center;
+}
+
+.whatsapp{
+    
+        position: absolute;
+        bottom: 0;
+        right: 0;
+       
+    
+}
+
+
+

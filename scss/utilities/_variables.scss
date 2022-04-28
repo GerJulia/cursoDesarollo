@@ -1,0 +1,13 @@
+$texto:(
+    color: white,
+    centro: center,
+    fuente: 20px,
+    
+);
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}

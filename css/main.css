@@ -1,267 +1,33 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    }
+body {
+  background: #242424;
+  background: linear-gradient(90deg, #242424 22%, #4e5153 83%); }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
+p, .textoAdicionalCurso {
+  color: white;
+  text-align: center;
+  font-size: 20px; }
 
+.textoAdicionalCurso {
+  background-color: #181818;
+  margin-top: 20px; }
 
+.textoEducacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
-.menu{
-    background-color: rgb(248, 242, 234);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    text-align: center;
-    
-    }
+footer {
+  color: whitesmoke;
+  text-align: center;
+  background-color: grey; }
 
-.menu li{
-    background-color: rgb(0, 0, 0);
-    display: inline-block;
-    padding: 10px;
-    margin: 7px;
-    text-transform: uppercase;
-    border-radius: 100px;
-    border: 3px solid rgb(89, 0, 255);
-    
-}
+.mainIndex {
+  height: 70vh;
+  display: grid;
+  grid-template-areas: "imagenPerro" "texto " "videoPerro " "footer";
+  text-align: center; }
 
-.menu li a{
-    color: white;
-    text-decoration: none;
-}
-
-.mainIndex{
-    height: 70vh;
-    display: grid;
-    grid-template-areas: "imagenPerro"
-                         "texto "
-                         "videoPerro "
-                         "footer";
-                         
-                          
-    justify-content: center;
-}
-
-
-.videoPerro{
-    text-align: center;
-    margin-top: 20px;
-    grid-area: videoPerro;
-    margin-bottom: 40px;
-    
-}
-
-.imagenPerro{
-    text-align: center;
-    height: 230px;
-    margin-top: 50px;
-    grid-area: imagenPerro;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.whatsapp{
-    height: 50px;
-    position: fixed;
-    bottom: 0 ;
-    right: 0;
-}
-
-.texto{
-    text-align: justify;    
-    color: antiquewhite;
-    grid-area: texto;
-    margin-top: 20px;
-}
-
-body{
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(9,19,128,1) 36%, rgba(9,9,121,1) 53%, rgba(0,212,255,1) 96%);
-    
-    }
-
-    footer{
-        color: rgb(246, 242, 237);
-       text-align: center;
-        width: 95%;
-        background-color: bisque;
-        color: black;
-        grid-area: footer;
-        }
-        
-        
-    .contacto{
-        text-align: center;
-        background-color: rgb(246, 224, 195);
-    }
-
-    .mascotaelite{
-        text-align: center;
-        background-color: rgb(246, 224, 195);
-    }
-
-    .educacion{
-        text-align: center;
-        background-color: rgb(246, 224, 195);
-    }
-
-    .quienesSomos{
-        text-align: center;
-        background-color: rgb(246, 224, 195);
-    }
-
-    .cursos {
-        text-align: center;
-        background-color: rgb(246, 224, 195);
-    } 
-
-    .formulario{
-        border: 3px solid rgb(143, 143, 243);
-        margin-top: 30px;
-        padding: 10px;
-    }
-
-  
-.textoCursos{
-    text-align: center;
-    margin-top: 100px;
-    color: rgb(12, 12, 12);
-    background-color: rgb(194, 143, 76);
-    } 
-
-    .textoAdicionalCurso{
-        margin-top: 100px;
-        color: rgb(72, 39, 39);
-        font-size:larger;
-        text-align: center;
-        font-weight: bold;
-        -webkit-text-stroke: 0.5px rgb(28, 26, 26);
-    }
-
-.textoEducacion{
-    text-align: center;
-    margin-top: 100px;
-    color: rgb(12, 12, 12);
-    background-color: rgb(194, 143, 76);
-}
-
-.textoQuienesSomos{
-    text-align: center;
-    margin-top: 100px;
-    color: rgb(12, 12, 12);
-    background-color: rgb(194, 143, 76);
-}
-
-.textoCurso{
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
-
-.textoCurso2{
-    color: rgb(1, 21, 25);
-    font-weight: bold;
-    -webkit-text-stroke: 0.2px rgb(87, 3, 254);
-    
-}
-
-
-
-@media only screen and (min-width:600px){
-
-    .mainIndex{
-        height: 70vh;
-        display: grid;
-        grid-template-areas: "imagenPerro"
-                             "texto"
-                             "videoPerro"
-                             "footer";
-
- }
-  
- .menu ul li a{
-     font-size: 0.8rem;
- }
-
-.texto{
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: rgb(109, 3, 3);
-}
-
-.textoEducacion{
-    font-size: 1.3rem;
-}
-
-.textoQuienesSomos{
-    font-size: 1.3rem ;
-}
-
-.textoCursos{
-    font-size: 1.3rem;
-}
-
-footer{
-    width: 90%;
-}
-footer h5{
-font-size: small;
-}
-
-
-
-
-@media only screen and (min-width:1024px){
-
-    .mainIndex{
-        height: 10vh;
-        display: grid;
-        grid-template-areas: "imagenPerro"
-                             "texto"
-                             "videoPerro"
-                             "footer";
-
-                             justify-content: center;
-}
-    
-.menu ul li a{
-    font-size: 1rem;
-}
-
-.imagenPerro{
-    height: 70%;
-}
-.texto{
-    font-size: 1.3rem;
-    color: rgb(109, 3, 3);
-    font-weight: bold;
-    margin-top: -50px;
-}
-
-.videoPerro{
-    height: 30%;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    
-}
-footer{
-    
-    width: 95%;
-}
-footer h5{
-   font-size:medium;
-   }
-}
-
-
-}
+.whatsapp {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
