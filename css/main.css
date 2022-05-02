@@ -173,3 +173,9 @@ footer h5 {
     position: absolute;
     bottom: 0;
     width: 95%; } }
+
+@media only screen and (max-width: 1920px) {
+  .footerQuienesSomos {
+    position: absolute;
+    bottom: 0;
+    width: 95%; } }
