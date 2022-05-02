@@ -13,45 +13,273 @@ p{
     font-size: map-get($texto,fuente);
 }
 
+.containerTexto{
+    max-width: 100%;
+    width: 100%;
+}
+//QuienesSomos
+
+.tituloQuienesSomos{
+    margin-top: 20px;
+    color: rgb(117, 167, 167);
+}
+
+.footerQuienesSomos{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(181, 107, 34);
+
+}
+
+//Cursos
+
+.subtituloCurso{
+    background-color: rgb(100, 94, 94);
+    color: rgb(223, 208, 93);
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 .textoAdicionalCurso{
     @extend p;
     background-color: rgb(24, 24, 24);
     margin-top: 20px;
 }
 
+
+
+//Educacion
+.tituloEducacion{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+    background-color: green;
+   border-radius: 13px;
+   width: 40%;
+    }
+
 .textoEducacion{
     @include flex-row-center;
+    margin-top: 40px;
+    
 }
+
+.educarPerro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aquamarine;
+    width: 50%;
+    margin-top: 40px;
+    border-radius: 13px;
+}
+
+.subTituloEducar{
+    margin-top: 10px;
+    color: rgb(10, 0, 0);
+    background-color: skyblue;
+    width: 30%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
 
 footer{
     color: whitesmoke;
     text-align: center;
-    background-color: grey;
+    background-color: rgb(181, 107, 34);
     
-    
-    
-    
+  
+
 }
 
+footer h5{
+    font-size: smaller;
+}
+
+//index
 .mainIndex{
     height: 70vh;
     display: grid;
-    grid-template-areas: "imagenPerro"
-                         "texto "
-                         "videoPerro "
-                         "footer";
+    grid-template-areas: "videoPerro";
                          
-                          
+                         
+                         text-align: center;
+}
+
+
+.caourselIndex{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.texto{
+    background-color: rgb(182, 174, 174);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 100%;
+    width: 100%;
+    font-size: 40px;
     text-align: center;
+    grid-area: texto;
+}
+
+
+
+.videoPerro{
+    margin-top: 10px;
+    text-align: center;
+    grid-area: videoPerro;
 }
 
 .whatsapp{
     
-        position: absolute;
-        bottom: 0;
-        right: 0;
-       
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    height: 50px;
+   
+
+}
+
+//Contacto
+
+.footerContacto{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+
+.tituloFormulario{
+    color: white;
+}
+
+.nombreFormulario{
+    color: white;
+}
+
+.emailFormulario{
+    color: white;
+}
+
+.paisFormulario{
+    color: white;
+}
+
+.mascotaFormulario{
+    color: white;
+}
+
+.perro{
+    color: white;
+}
+
+.gato{
+    color: white;
+}
+
+@media only screen and (max-width:480px){
+
     
+
+    .texto{
+        font-size: 20px;
+        max-width: 85%;
+        }
+
+    footer h5{
+        font-size: small;
+    }
+
+    .whatsapp{
+        max-width: 100%;
+        height: 25px;
+    }
+//Educacion
+    .subTituloEducar{
+        width: 60%;
+    }
+
+    .educarPerro{
+        width: 70%;
+    }
+    .tituloEducacion{
+        width: 90%;
+    }
+
+    //Cursos
+
+    .subtituloCurso{
+        font-size: 23px;
+        width: 80%;
+    }
+
+    
+}
+
+@media only screen and (max-width:1024px) and (min-width:1024px){
+    .texto{
+        font-size: 20px;
+        width: 100%;
+ }
+
+.videoPerro{
+    justify-content: center;
+    text-align: center;
+}
+
+ .logoWhatsapp{
+     height: 1px;
+     width: 1px;
+     
+ }
+.whatsapp{
+    max-width: 100%;
+    height: 20px;
+
+}
+
+//Educacion
+.subTituloEducar{
+    width: 50%;
+}
+.educarPerro{
+    width: 40%;
+}
+
+.tituloEducacion{
+    width: 60%;
+}
+
+//Curso
+
+.subtituloCurso{
+    width: 50%;
+}
+
+//QuienesSomos
+
+.footerQuienesSomos{
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+}
+
+
+}
+
+
+@media only screen and (max-width:1280px) and (min-width:1280px){
+    //QuienesSomos
+
+.footerQuienesSomos{
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+}
 }
 
 

@@ -7,27 +7,169 @@ p, .textoAdicionalCurso {
   text-align: center;
   font-size: 20px; }
 
+.containerTexto {
+  max-width: 100%;
+  width: 100%; }
+
+.tituloQuienesSomos {
+  margin-top: 20px;
+  color: #75a7a7; }
+
+.footerQuienesSomos {
+  color: white;
+  text-align: center;
+  background-color: #b56b22; }
+
+.subtituloCurso {
+  background-color: #645e5e;
+  color: #dfd05d;
+  width: 40%;
+  border-radius: 10px;
+  margin-top: 20px; }
+
 .textoAdicionalCurso {
   background-color: #181818;
   margin-top: 20px; }
 
+.tituloEducacion {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 40px;
+  background-color: green;
+  border-radius: 13px;
+  width: 40%; }
+
 .textoEducacion {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 40px; }
+
+.educarPerro {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: aquamarine;
+  width: 50%;
+  margin-top: 40px;
+  border-radius: 13px; }
+
+.subTituloEducar {
+  margin-top: 10px;
+  color: #0a0000;
+  background-color: skyblue;
+  width: 30%;
+  border-radius: 10px; }
 
 footer {
   color: whitesmoke;
   text-align: center;
-  background-color: grey; }
+  background-color: #b56b22; }
+
+footer h5 {
+  font-size: smaller; }
 
 .mainIndex {
   height: 70vh;
   display: grid;
-  grid-template-areas: "imagenPerro" "texto " "videoPerro " "footer";
+  grid-template-areas: "videoPerro";
   text-align: center; }
+
+.caourselIndex {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.texto {
+  background-color: #b6aeae;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  max-width: 100%;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  grid-area: texto; }
+
+.videoPerro {
+  margin-top: 10px;
+  text-align: center;
+  grid-area: videoPerro; }
 
 .whatsapp {
   position: absolute;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  max-width: 100%;
+  height: 50px; }
+
+.footerContacto {
+  position: absolute;
+  bottom: 0;
+  width: 90%; }
+
+.tituloFormulario {
+  color: white; }
+
+.nombreFormulario {
+  color: white; }
+
+.emailFormulario {
+  color: white; }
+
+.paisFormulario {
+  color: white; }
+
+.mascotaFormulario {
+  color: white; }
+
+.perro {
+  color: white; }
+
+.gato {
+  color: white; }
+
+@media only screen and (max-width: 480px) {
+  .texto {
+    font-size: 20px;
+    max-width: 85%; }
+  footer h5 {
+    font-size: small; }
+  .whatsapp {
+    max-width: 100%;
+    height: 25px; }
+  .subTituloEducar {
+    width: 60%; }
+  .educarPerro {
+    width: 70%; }
+  .tituloEducacion {
+    width: 90%; }
+  .subtituloCurso {
+    font-size: 23px;
+    width: 80%; } }
+
+@media only screen and (max-width: 1024px) and (min-width: 1024px) {
+  .texto {
+    font-size: 20px;
+    width: 100%; }
+  .videoPerro {
+    justify-content: center;
+    text-align: center; }
+  .logoWhatsapp {
+    height: 1px;
+    width: 1px; }
+  .whatsapp {
+    max-width: 100%;
+    height: 20px; }
+  .subTituloEducar {
+    width: 50%; }
+  .educarPerro {
+    width: 40%; }
+  .tituloEducacion {
+    width: 60%; }
+  .subtituloCurso {
+    width: 50%; }
+  .footerQuienesSomos {
+    position: absolute;
+    bottom: 0;
+    width: 95%; } }
+
+@media only screen and (max-width: 1280px) and (min-width: 1280px) {
+  .footerQuienesSomos {
+    position: absolute;
+    bottom: 0;
+    width: 95%; } }
