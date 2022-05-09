@@ -22,14 +22,25 @@ p{
 .tituloQuienesSomos{
     margin-top: 20px;
     color: rgb(117, 167, 167);
+    margin-left: 20px;
+
 }
 
-.footerQuienesSomos{
-    color: rgb(255, 255, 255);
+.fotoQuienesSomos{
+    color: rgba(195, 215, 215, 0.93);
     text-align: center;
-    background-color: rgb(181, 107, 34);
-
+    margin-top: 30px;
+    text-decoration:solid;
 }
+
+.fotoStaff{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
 
 //Cursos
 
@@ -56,6 +67,7 @@ p{
     background-color: green;
    border-radius: 13px;
    width: 40%;
+   margin-left: 20px
     }
 
 .textoEducacion{
@@ -70,6 +82,7 @@ p{
     width: 50%;
     margin-top: 40px;
     border-radius: 13px;
+    margin-left: 20px;
 }
 
 .subTituloEducar{
@@ -78,6 +91,8 @@ p{
     background-color: skyblue;
     width: 30%;
     border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 
@@ -87,29 +102,34 @@ p{
 
 
 
-footer{
-    color: whitesmoke;
-    text-align: center;
-    background-color: rgb(181, 107, 34);
-    
-  
 
-}
-
-footer h5{
-    font-size: smaller;
-}
 
 //index
-.mainIndex{
-    height: 70vh;
-    display: grid;
-    grid-template-areas: "videoPerro";
-                         
-                         
-                         text-align: center;
+
+.mascotas{
+    color: rgb(181, 174, 174);
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    
 }
 
+.imagenesMascotas{
+    display: flex;
+   flex-direction: row;
+   margin-top: 20px;
+
+   justify-content: center;
+}
+
+.imagenesMascotasDos{
+    display: flex;
+   flex-direction: row;
+   
+   margin-bottom: 20px;
+   justify-content: center;
+}
 
 .caourselIndex{
     margin-top: 20px;
@@ -136,25 +156,53 @@ footer h5{
 
 .whatsapp{
     
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 50px;
     right: 0;
     max-width: 100%;
-    height: 50px;
+    height: 40px;
+    right: 10px;
    
 
 }
 
 //Contacto
 
-.footerContacto{
-    position: absolute;
-    bottom: 0;
-    width: 90%;
+
+.tituloContacto{
+    color: whitesmoke;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(74, 73, 73);
+    height: 70px;
+    padding: 15px;
+    width: 100%;
+}
+
+.subtituloContacto{
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+.contactoTexto{
+    color: rgb(161, 137, 137);
+    text-decoration: none;
+    font-size: large;
+}
+
+.contactoInfo{
+    color: rgb(195, 190, 190);
+    margin-top: 40px;
+}
+
+.formulario{
+    margin-top: 40px;
+    margin-bottom: 130px;
 }
 
 .tituloFormulario{
     color: white;
+    text-decoration: underline;
 }
 
 .nombreFormulario{
@@ -181,13 +229,90 @@ footer h5{
     color: white;
 }
 
+//footer
+
+footer{
+    color: whitesmoke;
+    text-align: center;
+    background-color: rgb(181, 107, 34);
+    
+  
+
+}
+
+footer h5{
+    font-size: smaller;
+}
+
+.piePagina{
+    width: 100%;
+    
+}
+
+.piePagina .grupoUno{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1px 0px;
+    
+}
+
+.piePagina .grupoUno .box h5{
+    color: whitesmoke;
+    margin-top: 1px;
+}
+
+.piePagina .grupoUno .redSocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 30px;
+    line-height: 20px;
+    color: whitesmoke;
+    background-color: rgb(86, 86, 116);
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+
+.piePagina .grupoUno .redSocial a:hover{
+    color: yellow;
+}
+
 @media only screen and (max-width:480px){
 
-    
+    .piePagina .grupoUno{
+        width: 100%;
+      
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1px 0px;
+        
+    }
+    //index
 
+.imagenesMascotas{
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+margin-left: 10px;}
+
+.imagenesMascotasDos{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+margin-left: 10px;}
+
+    
+    .video{
+        width: 95%;
+        margin-left: 10px;
+
+    }
     .texto{
-        font-size: 20px;
-        max-width: 85%;
+        font-size: 25px;
+        width: 100%;
         }
 
     footer h5{
@@ -217,30 +342,58 @@ footer h5{
         width: 80%;
     }
 
-    
+    //QuienesSomos
+
+    .fotoStaff{
+        display: none;}
+
 }
+
+    
+
 
 @media only screen and (max-width:1024px) and (min-width:1024px){
     .texto{
-        font-size: 20px;
+        font-size: 30px;
         width: 100%;
  }
 
+ //fotosIndex
+
+ .perroUno{
+     width: 60%;
+ }
+ 
+ .perroDos{
+     width: 60%;
+ }
+
+ .perroTres{
+     width: 60%;
+ }
+
+ .perroCuatro{
+     width: 60%;
+ }
+
+ 
+
+
+ 
 .videoPerro{
     justify-content: center;
     text-align: center;
 }
 
- .logoWhatsapp{
-     height: 1px;
-     width: 1px;
+ 
      
- }
 .whatsapp{
     max-width: 100%;
     height: 20px;
 
 }
+
+
 
 //Educacion
 .subTituloEducar{
@@ -262,34 +415,31 @@ footer h5{
 
 //QuienesSomos
 
-.footerQuienesSomos{
-    position: absolute;
-    bottom: 0;
-    width: 95%;
-}
+.staff{
 
+    width: 80%;
+    
 
 }
+
+}
+
 
 
 @media only screen and (max-width:1280px){
     //QuienesSomos
 
-.footerQuienesSomos{
-    position: absolute;
-    bottom: 0;
-    width: 95%;
-}
+    .texto{
+        text-align: center;
+    }
+
+
 }
 
 @media only screen and (max-width:1920px){
     //QuienesSomos
     
-    .footerQuienesSomos{
-        position: absolute;
-        bottom: 0;
-        width: 95%;
-    }
+    
 }
 
 

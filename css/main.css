@@ -13,12 +13,20 @@ p, .textoAdicionalCurso {
 
 .tituloQuienesSomos {
   margin-top: 20px;
-  color: #75a7a7; }
+  color: #75a7a7;
+  margin-left: 20px; }
 
-.footerQuienesSomos {
-  color: white;
+.fotoQuienesSomos {
+  color: rgba(195, 215, 215, 0.93);
   text-align: center;
-  background-color: #b56b22; }
+  margin-top: 30px;
+  text-decoration: solid; }
+
+.fotoStaff {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: 100%; }
 
 .subtituloCurso {
   background-color: #645e5e;
@@ -36,7 +44,8 @@ p, .textoAdicionalCurso {
   margin-top: 40px;
   background-color: green;
   border-radius: 13px;
-  width: 40%; }
+  width: 40%;
+  margin-left: 20px; }
 
 .textoEducacion {
   display: flex;
@@ -49,28 +58,36 @@ p, .textoAdicionalCurso {
   background-color: aquamarine;
   width: 50%;
   margin-top: 40px;
-  border-radius: 13px; }
+  border-radius: 13px;
+  margin-left: 20px; }
 
 .subTituloEducar {
   margin-top: 10px;
   color: #0a0000;
   background-color: skyblue;
   width: 30%;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-top: 20px; }
 
-footer {
-  color: whitesmoke;
-  text-align: center;
-  background-color: #b56b22; }
-
-footer h5 {
-  font-size: smaller; }
-
-.mainIndex {
-  height: 70vh;
-  display: grid;
-  grid-template-areas: "videoPerro";
+.mascotas {
+  color: #b5aeae;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  width: 100%;
   text-align: center; }
+
+.imagenesMascotas {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center; }
+
+.imagenesMascotasDos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: center; }
 
 .caourselIndex {
   margin-top: 20px;
@@ -91,19 +108,42 @@ footer h5 {
   grid-area: videoPerro; }
 
 .whatsapp {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 50px;
   right: 0;
   max-width: 100%;
-  height: 50px; }
+  height: 40px;
+  right: 10px; }
 
-.footerContacto {
-  position: absolute;
-  bottom: 0;
-  width: 90%; }
+.tituloContacto {
+  color: whitesmoke;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #4a4949;
+  height: 70px;
+  padding: 15px;
+  width: 100%; }
+
+.subtituloContacto {
+  color: whitesmoke;
+  margin-top: 20px; }
+
+.contactoTexto {
+  color: #a18989;
+  text-decoration: none;
+  font-size: large; }
+
+.contactoInfo {
+  color: #c3bebe;
+  margin-top: 40px; }
+
+.formulario {
+  margin-top: 40px;
+  margin-bottom: 130px; }
 
 .tituloFormulario {
-  color: white; }
+  color: white;
+  text-decoration: underline; }
 
 .nombreFormulario {
   color: white; }
@@ -123,10 +163,64 @@ footer h5 {
 .gato {
   color: white; }
 
+footer {
+  color: whitesmoke;
+  text-align: center;
+  background-color: #b56b22; }
+
+footer h5 {
+  font-size: smaller; }
+
+.piePagina {
+  width: 100%; }
+
+.piePagina .grupoUno {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1px 0px; }
+
+.piePagina .grupoUno .box h5 {
+  color: whitesmoke;
+  margin-top: 1px; }
+
+.piePagina .grupoUno .redSocial a {
+  display: inline-block;
+  text-decoration: none;
+  width: 30px;
+  line-height: 20px;
+  color: whitesmoke;
+  background-color: #565674;
+  text-align: center;
+  transition: all 300ms ease; }
+
+.piePagina .grupoUno .redSocial a:hover {
+  color: yellow; }
+
 @media only screen and (max-width: 480px) {
+  .piePagina .grupoUno {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1px 0px; }
+  .imagenesMascotas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px; }
+  .imagenesMascotasDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px; }
+  .video {
+    width: 95%;
+    margin-left: 10px; }
   .texto {
-    font-size: 20px;
-    max-width: 85%; }
+    font-size: 25px;
+    width: 100%; }
   footer h5 {
     font-size: small; }
   .whatsapp {
@@ -140,18 +234,25 @@ footer h5 {
     width: 90%; }
   .subtituloCurso {
     font-size: 23px;
-    width: 80%; } }
+    width: 80%; }
+  .fotoStaff {
+    display: none; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 1024px) {
   .texto {
-    font-size: 20px;
+    font-size: 30px;
     width: 100%; }
+  .perroUno {
+    width: 60%; }
+  .perroDos {
+    width: 60%; }
+  .perroTres {
+    width: 60%; }
+  .perroCuatro {
+    width: 60%; }
   .videoPerro {
     justify-content: center;
     text-align: center; }
-  .logoWhatsapp {
-    height: 1px;
-    width: 1px; }
   .whatsapp {
     max-width: 100%;
     height: 20px; }
@@ -163,19 +264,9 @@ footer h5 {
     width: 60%; }
   .subtituloCurso {
     width: 50%; }
-  .footerQuienesSomos {
-    position: absolute;
-    bottom: 0;
-    width: 95%; } }
+  .staff {
+    width: 80%; } }
 
 @media only screen and (max-width: 1280px) {
-  .footerQuienesSomos {
-    position: absolute;
-    bottom: 0;
-    width: 95%; } }
-
-@media only screen and (max-width: 1920px) {
-  .footerQuienesSomos {
-    position: absolute;
-    bottom: 0;
-    width: 95%; } }
+  .texto {
+    text-align: center; } }
