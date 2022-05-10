@@ -13,10 +13,7 @@ p{
     font-size: map-get($texto,fuente);
 }
 
-.containerTexto{
-    max-width: 100%;
-    width: 100%;
-}
+
 //QuienesSomos
 
 .tituloQuienesSomos{
@@ -112,7 +109,14 @@ p{
     background-color: black;
     width: 100%;
     text-align: center;
+    margin-left: 10px;
     
+}
+
+.containerTexto{
+    max-width: 100%;
+    width: 100%;
+    margin-left: 10px;
 }
 
 .imagenesMascotas{
@@ -143,7 +147,7 @@ p{
     width: 100%;
     font-size: 40px;
     text-align: center;
-    grid-area: texto;
+    
 }
 
 
@@ -151,7 +155,7 @@ p{
 .videoPerro{
     margin-top: 10px;
     text-align: center;
-    grid-area: videoPerro;
+    
 }
 
 .whatsapp{
@@ -165,6 +169,8 @@ p{
    
 
 }
+
+
 
 //Contacto
 

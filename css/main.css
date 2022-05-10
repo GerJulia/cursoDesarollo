@@ -7,10 +7,6 @@ p, .textoAdicionalCurso {
   text-align: center;
   font-size: 20px; }
 
-.containerTexto {
-  max-width: 100%;
-  width: 100%; }
-
 .tituloQuienesSomos {
   margin-top: 20px;
   color: #75a7a7;
@@ -75,7 +71,13 @@ p, .textoAdicionalCurso {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin-left: 10px; }
+
+.containerTexto {
+  max-width: 100%;
+  width: 100%;
+  margin-left: 10px; }
 
 .imagenesMascotas {
   display: flex;
@@ -99,13 +101,11 @@ p, .textoAdicionalCurso {
   max-width: 100%;
   width: 100%;
   font-size: 40px;
-  text-align: center;
-  grid-area: texto; }
+  text-align: center; }
 
 .videoPerro {
   margin-top: 10px;
-  text-align: center;
-  grid-area: videoPerro; }
+  text-align: center; }
 
 .whatsapp {
   position: fixed;
